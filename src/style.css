@@ -21,7 +21,34 @@ li {
 }
 
 .weather-app-border {
-  margin: 30px auto 0px;
+  margin: 30px auto 5px;
   border: 1px solid #dadce0;
   border-radius: 10px;
+  padding: 20px;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 10px;
+  position: relative;
+  top: -16px;
+}
+
+.weather-temperature strong {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -35px;
+}
+
+.extra-weather-info {
+  padding: 0px 0px 0px 40px;
 }
