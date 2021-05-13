@@ -12,17 +12,19 @@
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
      <link rel="stylesheet" href="src/style.css" />
+     
   </head>
   <body>
     <div class="container">
         <div class="weather-app-wrapper">
         <div class="weather-app-border">
             <div class="overview">
-      <h1>London</h1>
+      <h1 id="city"></h1>
        <ul>
             <li>Wednesday 20:00</li>
-            <li>Mostly sunny</li>
+            <li class="description-element" id="description"></li>
           </ul>
           </div>
         
@@ -33,16 +35,16 @@
           <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Mostly sunny" class="float-left"/>
 
       
-            <strong>14</strong>
+            <strong id="temperature"></strong>
             <span class="units">°C | <a href="#">°F</a> </span>
            
          </div>
       </div>
       <div class="col-6">
         <ul class="extra-weather-info">
-          <li>Precipitation: 1%</li>
-          <li>Humidity: 47%</li>
-          <li>Wind: 4mph</li>
+        
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind"></span> km / h</li>
         </ul>
       </div>
     </div>
